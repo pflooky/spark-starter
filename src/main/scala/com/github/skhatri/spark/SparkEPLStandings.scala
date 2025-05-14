@@ -42,17 +42,41 @@ object SparkEPLStandings extends App {
     df
   }
 
+  /**
+   * This method should find and print all unique team names that participated in the Premier League season.
+   * The output should be a list of team names printed to the console.
+   * @param df The DataFrame containing match data.
+   */
   def findTeamsInPremierLeague(df: DataFrame): Unit = {
 
   }
 
+  /**
+   * This method should find and print all matches (both home and away) for a specific team.
+   * The output should be a list of matches for the given team, printed to the console.
+   * @param df The DataFrame containing match data.
+   * @param name The name of the team to find matches for.
+   */
   def findAllMatchesByTeam(df: DataFrame, name: String): Unit = {
 
   }
 
+  /**
+   * This method should find and print the match with the biggest win (largest goal difference) by any team.
+   * The output should be the details of the match with the largest goal difference, printed to the console.
+   * @param df The DataFrame containing match data.
+   */
   def findBiggestWinByAnyTeam(df: DataFrame): Unit = {
   }
 
+  /**
+   * This method should calculate and return the total points accumulated by a specific team.
+   * Home win = 3 points, home draw = 1 point, home loss = 0 points.
+   * Away win = 3 points, away draw = 1 point, away loss = 0 points.
+   * @param df The DataFrame containing match data.
+   * @param name The name of the team.
+   * @return The total points for the specified team.
+   */
   def findTeamsPoints(df: DataFrame, name: String): Int = {
     0
   }
